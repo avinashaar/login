@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-6 ">
+      <img class="img-fluid"
+           src="https://images.unsplash.com/photo-1531966662811-c6501e46eda6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
+    </div>
+    <div class="col-sm-6">
+
+      <div class="container">
+        <div class="text-center">
+          <h2>Lovebirds</h2>
+        </div>
+        <div class="text-center" id="welcome" style="color: #7F7F7F">
+          <h2>Welcome To Lovebirds</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <form [formGroup]="loginform" (ngSubmit)="submitlogin()">
+        <label id="login" for="uname"><b>User Name or Email</b></label>
+        <input id="uname"  type="text" formControlName="email" placeholder="Enter Username" name="uname" required>
+        <br>
+        <br>
+        <label id="login" for="psw"><b>Password</b></label>
+        <input id="psw" type="password" formControlName="password" placeholder="Enter Password" name="psw" required>
+        <div class="for">
+          <h6>Forget Password?</h6>
+        </div>
+        <div style="padding-top: 4%" align="center">
+          <button type="submit" class="button" >Sign in </button>
+        </div>
+        </form>
+        <br>
+        <br>
+        <br>
+        <div class="separator"><label>or</label></div>
+
+          <div class="right" align="center">
+            <img width="20px" style="margin-top:7px; margin-right:8px" alt="Google sign-in"
+                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" />
+            <span> Sign in with Google</span>
+          </div>
+        <div align="center" style="padding-top: 50px;color: #5C5C5C" >
+          <h6>New Lovebirds? <a  routerLink="/signup"><u>Create Account</u></a></h6>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+</div>
