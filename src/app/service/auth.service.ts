@@ -23,7 +23,7 @@ export class AuthService {
   }
 
   getdetails() {
-    return this.http.get(this.serverUrl + 'apidetails');
+    return this.http.get(this.serverUrl + 'apidetails', {});
   }
 
 
